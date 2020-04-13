@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>[Thực hành] Xây dựng lớp Date</title>
+	<script type="text/javascript" src="MyDate.js"></script>
+</head>
+<body>
+	<p>[Thực hành] Xây dựng lớp Date</p>
+	<script type="text/javascript">
+		let date = new MyDate('13', '04', '2020');
+
+		alert(date.getDay() + '/' + date.getMonth() + '/' + date.getYear());
+
+		date.setDay('14');
+		date.setMonth('04');
+		date.setYear('2020');
+
+		alert(date.getDay() + '/' + date.getMonth() + '/' + date.getYear());
+
+		date.setDate('15', '04', '2020');
+
+		alert(date.toString());
+
+	</script>
+</body>
+</html>
